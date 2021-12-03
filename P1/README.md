@@ -7,7 +7,7 @@ Dockerfile
 2) Скопируйте index.html в /var/www/html/index2.html
 3) PORTFORWARD от хост-порта 20080 к контейнеру 80
 4) Создайте переменную сборки с именем NAME со значением по умолчанию Redhat.
-5) В Dockerfile должны создать файл index.html в /var/www/html с содержимым «Hello $NAME!!!»
+5) В Dockerfile должны создать файл index.html в /var/www/html с содержимым «Hello $NAME from $ENVIRONMENT!!»
 6) Используйте USER с пользователем apache, чтобы запустить его
 7) Создайте переменную среды с именем ENVIRONMENT=dafault.
 8) См. чем отличается ENTRYPOINT от CMD https://stackoverflow.com/questions/21553353/what-is-the-difference-between-cmd-and-entrypoint-in-a-dockerfile
@@ -19,7 +19,7 @@ Dockerfile
 3) Создайте сценарий под названием test.sh для получения через curl index.html и index2.html с порта, указанный в пункте 2, повторите переменную среды ENVIRONMENT.
 4) Создайте скрипт с именем stop.sh, чтобы остановить контейнер и удалить его.
 5) Создайте скрипт с именем logs.sh для получения последних 20 строк журнала.
-6) Создайте скрипт для пометки изображения и загрузите его в docker.io, также сохраните его в image-local.tar.
+6) Создайте скрипт push.sh для пометки изображения, загрузке его в docker.io, а также сохраните его в image-local.tar.
 
 # Spanish
 Dockerfile  
