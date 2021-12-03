@@ -29,5 +29,5 @@ sudo podman run -ti test 8.8.8.8
 Aca va a tirar error ya que reemplaza el cmd por 8.8.8.8  
 А здесь будет выдана ошибка, так как мы меняем CMD полностью значением 8.8.8.8
 
-podman run command, it overwrites the CMD instruction. 
+podman run command, it overwrites the CMD instruction.  
 podman при запуске перезаписывает CMD инструкцию.
