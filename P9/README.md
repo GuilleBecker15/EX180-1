@@ -59,7 +59,7 @@ curl www.custom.com
 This was like make a new app from this git https://github.com/${RHT_OCP4_GITHUB_USER}/DO180-apps, with this dir nodejs-dir, nodejs12 and with this env MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATABASE=do180  name do180-p6
 with this env  npm_config_registry=http://${RHT_OCP4_NEXUS_SERVER}/repository/npm-proxy
 
-oc new-app --as-deployment-config nodjs:12 --name=do180-p6 https://github.com/${RHT_OCP4_GITHUB_USER}/DO180-apps  --context-dir --build-env  npm_config_registry=http://${RHT_OCP4_NEXUS_SERVER}/repository/npm-proxy nodejs-dir  
+oc new-app --as-deployment-config nodjs:12 --name=do180-p6 https://github.com/${RHT_OCP4_GITHUB_USER}/DO180-apps  --context-dir nodejs-dir --build-env=npm_config_registry=http://${RHT_OCP4_NEXUS_SERVER}/repository/npm-proxy 
 
 Make a mysql app with this envs MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATABASE=do180 -e MYSQL_ROOT_PASSWORD=r00tpa55 from image acme.com/ex180/image
 oc new-app --name foo-name --docker-image=acme.com/ex180/image -e MYSQL_USER=user1 -e MYSQL_PASSWORD=mypa55 -e MYSQL_DATABASE=do180 -e MYSQL_ROOT_PASSWORD=r00tpa55 
