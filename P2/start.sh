@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo podman build -t do180-p2 --build-arg NOMBRE=mosco .
+sudo podman build -t do180-p2 --build-arg NAME=mosco .
 
 #chcon -Rt container_file_t info/
 #o

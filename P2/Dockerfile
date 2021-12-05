@@ -2,7 +2,7 @@ FROM rhscl/mysql-57-rhel7
 
 ENV PORT=3306
 
-ARG NOMBRE=sinnombre
+ARG NAME=sinnombre
 
 MAINTAINER mosco mascolo99@gmail.com
 
@@ -10,7 +10,7 @@ MAINTAINER mosco mascolo99@gmail.com
 
 COPY ./mysql /opt/app-root/src
 
-RUN echo "Hola ${NOMBRE}!!!" > /opt/app-root/src/file.txt 
+RUN echo "Hola ${NAME}!!!" > /opt/app-root/src/file.txt 
 
 EXPOSE ${PORT}
 
