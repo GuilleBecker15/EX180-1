@@ -1,4 +1,16 @@
 # Server MYSQL
+
+# Russian
+### Dockerfile  
+Создайте файл докеров для поднятия службы mysql
+1) То же P3, но с:
+2) PORTFORWARD случайного порта хоста, но только от источника 127.0.0.1 до 3306 контейнера
+
+### Скрипты
+1) Создайте скрипт для удаления изображений
+
+# Spanish
+
 ### Dockerfile  
 Hacer un dockerfile para levantar un servicio mysql
 1) Idem P3 pero con:
