@@ -1,5 +1,7 @@
 # 7.02 Este es con podman, hace varios build y usa 2 contenedores una db y un node.  
 
+Лаба из DO180
+
 Hacer lab multicontainer-design start y luego y a /home/student/DO180/labs/multicontainer-design/images/mysql/ y hacer un build con el nombre do180/mysql-57-rhel7  
 Verificar la creacion de la imagen  
 Hacer un build de /home/student/DO180/labs/multicontainer-design/images/nodejs/ con el nombre do180/nodejs  

@@ -1,5 +1,19 @@
 # P4
 
+Лаба из DO180
+
+## 6-03 Создать новое приложение с использованием образа докера и переадресации портов
+Создайте новый проект, содержащий ваш user-mysql-openshift и приложение под названием mysql-openshift
+изображение в: registry.access.redhat.com/rhscl/mysql-57-rhel7:latest
+Используемые переменные env: MYSQL_USER=user1 MYSQL_PASSWORD=mypa55 MYSQL_DATABASE=do180 MYSQL_ROOT_PASSWORD=r00tpa55
+lab openshift-resources start 
+source /usr/local/etc/ocp4.config
+Сделать переадресацию портов с рабочей станции порта 3306 на 3306
+Создать маршрут до сервиса 3306
+Тестовое задание
+oc delete project ${RHT_OCP4_DEV_USER}-mysql-openshift  
+lab openshift-resources finish  
+
 ## 6-03 New app using a docker image, and using port-forward   
 Create a new project that contains your user-mysql-openshift and a app called mysql-openshift  
 image in: registry.access.redhat.com/rhscl/mysql-57-rhel7:latest  

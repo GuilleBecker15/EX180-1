@@ -1,5 +1,7 @@
 # 6-05 idem a 6-03 pero S2i y con name la ruta
 
+Лаба из DO180
+
 1 lab openshift-routes start  
   source /usr/local/etc/ocp4.config  
 2 new project ${RHT_OCP4_DEV_USER}-route  
